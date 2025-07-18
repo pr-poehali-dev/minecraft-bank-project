@@ -115,4 +115,25 @@
       10px -10px,
       -10px 0px;
   }
+
+  /* Улучшенная адаптивность для мобильных */
+  @media (max-width: 640px) {
+    .minecraft-bg {
+      background-size: 15px 15px;
+    }
+  }
+
+  /* Оптимизация для сенсорных устройств */
+  @media (hover: none) and (pointer: coarse) {
+    button {
+      min-height: 44px;
+      min-width: 44px;
+    }
+
+    input,
+    select,
+    textarea {
+      min-height: 44px;
+    }
+  }
 }
